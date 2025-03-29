@@ -78,24 +78,29 @@ button:hover {
     background-color: #E1DFD9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #155C4F;
 }
 
 #tcoBreakdown ul, #fuelCostBreakdown p {
     margin: 0;
     padding: 0;
+    color: #155C4F;
 }
 
 #tcoBreakdown li, #fuelCostBreakdown p {
     margin-bottom: 10px;
     font-size: 1.1em;
+    color: #155C4F;
 }
 
 #tcoBreakdown li {
     list-style-type: none;
+    color: #155C4F;
 }
 
 #fuelCostBreakdown h3 {
     margin-top: 0;
+    color: #155C4F;
 }
 
 /* Responsive Design */
