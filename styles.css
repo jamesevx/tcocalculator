@@ -1,17 +1,39 @@
-/* Scope all styles to #tco-wrapper to avoid affecting the rest of the Squarespace site */
-#tco-wrapper {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+/* General Styles */
+#tco-wrapper  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F4F4;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+#tco-wrapper {.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+#tco-wrapper h1 {
+    text-align: center;
+    color: #155C4F;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#tco-wrapper h3 {
+    color: #155C4F;
+    margin-top: 20px;
+}
+
+/* Form Layout */
 #tco-wrapper .input-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
 }
 
 #tco-wrapper .vehicle-column {
@@ -19,28 +41,92 @@
 }
 
 #tco-wrapper .input-group {
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
-#tco-wrapper input {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-#tco-wrapper button {
-    width: 100%;
+#tco-wrapper input, select, button {
     padding: 10px;
-    background: #155C4F;
-    color: white;
-    border: none;
+    font-size: 1em;
+    border: 2px solid #E1DFD9;
     border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#tco-wrapper input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #155C4F;
+    box-shadow: 0 0 5px rgba(21, 92, 79, 0.5);
+}
+
+#tco-wrapper label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #155C4F;
+}
+
+/* Button Styles */
+#tco-wrapper button {
+    background-color: #155C4F;
+    color: #FFFFFF;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
 #tco-wrapper button:hover {
-    background: #0E3D34;
+    background-color: #1d7a6a;
 }
 
-/* If additional styles are needed, add #tco-wrapper before each selector */
+/* Output Section */
+#tcoBreakdown, #fuelCostBreakdown {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #E1DFD9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tcoBreakdown ul, #fuelCostBreakdown p {
+    margin: 0;
+    padding: 0;
+}
+
+#tcoBreakdown li, #fuelCostBreakdown p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#tcoBreakdown li {
+    list-style-type: none;
+}
+
+#fuelCostBreakdown h3 {
+    margin-top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   #tco-wrapper .container {
+        padding: 15px;
+    }
+
+   #tco-wrapper h1 {
+        font-size: 1.5em;
+    }
+
+   #tco-wrapper label {
+        font-size: 1em;
+    }
+
+   #tco-wrapper .input-container {
+        flex-direction: column;
+    }
+
+   #tco-wrapper .vehicle-column {
+        width: 100%;
+    }
+}
