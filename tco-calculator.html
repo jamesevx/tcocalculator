@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCO Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Total Cost of Ownership Calculator</h1>
+        <form id="tcoForm">
+            <div class="input-container">
+                <!-- Electric Vehicle Inputs -->
+                <div class="vehicle-column">
+                    <h3>Electric Vehicle</h3>
+                    <div class="input-group">
+                        <label for="msrpEV">MSRP (Electric Vehicle) $</label>
+                        <input type="number" id="msrpEV" name="msrpEV">
+                    </div>
+                    <div class="input-group">
+                        <label for="taxCreditEV">Tax Credit (Electric Vehicle) $</label>
+                        <input type="number" id="taxCreditEV" name="taxCreditEV">
+                    </div>
+                    <div class="input-group">
+                        <label for="maintenanceCostEV">Maintenance Cost per Mile (Electric Vehicle) $</label>
+                        <input type="number" id="maintenanceCostEV" name="maintenanceCostEV">
+                    </div>
+                    <div class="input-group">
+                        <label for="efficiencyEV">Efficiency (Miles per kWh)</label>
+                        <input type="number" id="efficiencyEV" name="efficiencyEV">
+                    </div>
+                    <div class="input-group">
+                        <label for="electricityCost">Electricity Cost per kWh $</label>
+                        <input type="number" id="electricityCost" name="electricityCost">
+                    </div>
+                    <div class="input-group">
+                        <label for="milesDriven">Miles Driven per Year</label>
+                        <input type="number" id="milesDriven" name="milesDriven">
+                    </div>
+                    <div class="input-group">
+                        <label for="yearsOwned">Years Owned</label>
+                        <input type="number" id="yearsOwned" name="yearsOwned">
+                    </div>
+                </div>
+
+                <!-- Gas Vehicle Inputs -->
+                <div class="vehicle-column">
+                    <h3>Gas/Diesel Vehicle</h3>
+                    <div class="input-group">
+                        <label for="msrpGas">MSRP (Gas Vehicle) $</label>
+                        <input type="number" id="msrpGas" name="msrpGas">
+                    </div>
+                    <div class="input-group">
+                        <label for="taxCreditGas">Tax Credit (Gas Vehicle) $</label>
+                        <input type="number" id="taxCreditGas" name="taxCreditGas">
+                    </div>
+                    <div class="input-group">
+                        <label for="maintenanceCostGas">Maintenance Cost per Mile (Gas Vehicle) $</label>
+                        <input type="number" id="maintenanceCostGas" name="maintenanceCostGas">
+                    </div>
+                    <div class="input-group">
+                        <label for="mpgGas">Fuel Efficiency (Miles per Gallon)</label>
+                        <input type="number" id="mpgGas" name="mpgGas">
+                    </div>
+                    <div class="input-group">
+                        <label for="fuelCostGas">Fuel Cost per Gallon $</label>
+                        <input type="number" id="fuelCostGas" name="fuelCostGas">
+                    </div>
+                    <div class="input-group">
+                        <label for="milesDrivenGas">Miles Driven per Year</label>
+                        <input type="number" id="milesDrivenGas" name="milesDrivenGas">
+                    </div>
+                    <div class="input-group">
+                        <label for="yearsOwnedGas">Years Owned</label>
+                        <input type="number" id="yearsOwnedGas" name="yearsOwnedGas">
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" onclick="calculateTCO()">Calculate TCO</button>
+        </form>
+
+        <!-- TCO Output Section -->
+        <div id="tcoBreakdown">
+            <h3>TCO Breakdown</h3>
+            <div id="tcoEVDetails"></div>
+            <div id="tcoGasDetails"></div>
+        </div>
+
+        <!-- Fuel Cost Breakdown -->
+        <div id="fuelCostBreakdown">
+            <h3>Fuel Cost Breakdown</h3>
+            <div id="fuelCostEVDetails"></div>
+            <div id="fuelCostGasDetails"></div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
