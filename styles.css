@@ -1,13 +1,4 @@
-/* General Styles */
-#tco-wrapper  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F4F4F4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-#tco-wrapper {.container {
+#tco-wrapper .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -15,7 +6,6 @@
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 
 #tco-wrapper h1 {
     text-align: center;
@@ -46,7 +36,7 @@
     margin-bottom: 10px;
 }
 
-#tco-wrapper input, select, button {
+input, select, button {
     padding: 10px;
     font-size: 1em;
     border: 2px solid #E1DFD9;
@@ -55,7 +45,7 @@
     box-sizing: border-box;
 }
 
-#tco-wrapper input:focus, select:focus, button:focus {
+input:focus, select:focus, button:focus {
     outline: none;
     border-color: #155C4F;
     box-shadow: 0 0 5px rgba(21, 92, 79, 0.5);
@@ -68,7 +58,7 @@
 }
 
 /* Button Styles */
-#tco-wrapper button {
+button {
     background-color: #155C4F;
     color: #FFFFFF;
     font-weight: bold;
@@ -77,7 +67,7 @@
     margin-top: 20px;
 }
 
-#tco-wrapper button:hover {
+button:hover {
     background-color: #1d7a6a;
 }
 
@@ -110,23 +100,23 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-   #tco-wrapper .container {
+    .container {
         padding: 15px;
     }
 
-   #tco-wrapper h1 {
+    h1 {
         font-size: 1.5em;
     }
 
-   #tco-wrapper label {
+    label {
         font-size: 1em;
     }
 
-   #tco-wrapper .input-container {
+    .input-container {
         flex-direction: column;
     }
 
-   #tco-wrapper .vehicle-column {
+    .vehicle-column {
         width: 100%;
     }
 }
