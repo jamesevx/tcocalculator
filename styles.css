@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
-
+/*
 #tco-wrapper {
     font-family: 'Work Sans', sans-serif !important; /* Ensures that all text inside the calculator uses Work Sans */
     color: #155C4F;  /* Set the default text color */
@@ -8,7 +8,17 @@
     background-color: #ffffff;  /* Set background for the wrapper */
     border-radius: 10px;  /* Add rounded corners */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
-}
+} */
+
+ #tco-wrapper {
+        max-width: 800px;
+        font-family: 'Work Sans', sans-serif !important;
+        margin: auto;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
 #tco-wrapper .container {
     max-width: 1000px;
