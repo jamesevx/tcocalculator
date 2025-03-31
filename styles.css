@@ -5,6 +5,11 @@
     background-color: #FFFFFF;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    font-family: 'Work Sans', sans-serif;
+    color: #155C4F;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 #tco-wrapper h1 {
