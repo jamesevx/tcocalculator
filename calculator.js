@@ -49,24 +49,24 @@ function calculateTCO() {
     tcoEVDetails.innerHTML = `
         <p><strong>Electric Vehicle TCO Breakdown:</strong></p>
         <ul>
-            <li>MSRP (EV): $${Math.round(msrpEV).toLocaleString()}</li>
-            <li>Tax Credit (EV): -$${Math.round(taxCreditEV).toLocaleString()}</li>
-            <li>Maintenance Costs (EV): $${Math.round(maintenanceCostsEV).toLocaleString()}</li>
-            <li>Fuel Costs (EV): $${Math.round(fuelCostsEV).toLocaleString()}</li>
-            <li>Depreciation (EV): $${Math.round(depreciationEV).toLocaleString()}</li>
-            <li><strong>Total TCO for EV: $${Math.round(tcoEV).toLocaleString()}</strong></li>
+            <li>MSRP (EV): $${msrpEV.toLocaleString()}</li>
+            <li>Tax Credit (EV): -$${taxCreditEV.toLocaleString()}</li>
+            <li>Maintenance Costs (EV): $${maintenanceCostsEV.toLocaleString()}</li>
+            <li>Fuel Costs (EV): $${fuelCostsEV.toLocaleString()}</li>
+            <li>Depreciation (EV): $${depreciationEV.toLocaleString()}</li>
+            <li><strong>Total TCO for EV: $${tcoEV.toLocaleString()}</strong></li>
         </ul>
     `;
 
     tcoGasDetails.innerHTML = `
         <p><strong>Gas Vehicle TCO Breakdown:</strong></p>
         <ul>
-            <li>MSRP (Gas): $${Math.round(msrpGas).toLocaleString()}</li>
-            <li>Tax Credit (Gas): -$${Math.round(taxCreditGas).toLocaleString()}</li>
-            <li>Maintenance Costs (Gas): $${Math.round(maintenanceCostsGas).toLocaleString()}</li>
-            <li>Fuel Costs (Gas): $${Math.round(fuelCostsGas).toLocaleString()}</li>
-            <li>Depreciation (Gas): $${Math.round(depreciationGas).toLocaleString()}</li>
-            <li><strong>Total TCO for Gas Vehicle: $${Math.round(tcoGas).toLocaleString()}</strong></li>
+            <li>MSRP (Gas): $${msrpGas.toLocaleString()}</li>
+            <li>Tax Credit (Gas): -$${taxCreditGas.toLocaleString()}</li>
+            <li>Maintenance Costs (Gas): $${maintenanceCostsGas.toLocaleString()}</li>
+            <li>Fuel Costs (Gas): $${fuelCostsGas.toLocaleString()}</li>
+            <li>Depreciation (Gas): $${depreciationGas.toLocaleString()}</li>
+            <li><strong>Total TCO for Gas Vehicle: $${tcoGas.toLocaleString()}</strong></li>
         </ul>
     `;
 
@@ -77,20 +77,20 @@ function calculateTCO() {
     fuelCostEVDetails.innerHTML = `
         <p><strong>Electric Vehicle Fuel Cost Breakdown:</strong></p>
         <ul>
-            <li>Total Miles Driven: ${Math.round(totalMilesDriven).toLocaleString()} miles</li>
+            <li>Total Miles Driven: ${totalMilesDriven.toLocaleString()} miles</li>
             <li>Fuel Efficiency (EV): ${efficiencyEV} miles/kWh</li>
-            <li>Electricity Cost per kWh: $${Math.round(electricityCost).toLocaleString()}</li>
-            <li><strong>Total Fuel Cost for EV: $${Math.round(fuelCostsEV).toLocaleString()}</strong></li>
+            <li>Electricity Cost per kWh: $${electricityCost.toLocaleString()}</li>
+            <li><strong>Total Fuel Cost for EV: $${fuelCostsEV.toLocaleString()}</strong></li>
         </ul>
     `;
 
     fuelCostGasDetails.innerHTML = `
         <p><strong>Gas Vehicle Fuel Cost Breakdown:</strong></p>
         <ul>
-            <li>Total Miles Driven: ${Math.round(totalMilesDrivenGas).toLocaleString()} miles</li>
+            <li>Total Miles Driven: ${totalMilesDrivenGas.toLocaleString()} miles</li>
             <li>Fuel Efficiency (Gas): ${mpgGas} mpg</li>
-            <li>Fuel Cost per Gallon: $${Math.round(fuelCostGas).toLocaleString()}</li>
-            <li><strong>Total Fuel Cost for Gas Vehicle: $${Math.round(fuelCostsGas).toLocaleString()}</strong></li>
+            <li>Fuel Cost per Gallon: $${fuelCostGas.toLocaleString()}</li>
+            <li><strong>Total Fuel Cost for Gas Vehicle: $${fuelCostsGas.toLocaleString()}</strong></li>
         </ul>
     `;
 }
