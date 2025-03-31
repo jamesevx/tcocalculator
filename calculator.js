@@ -51,8 +51,8 @@ function calculateTCO() {
         <ul>
             <li>MSRP (EV): $${msrpEV.toLocaleString()}</li>
             <li>Tax Credit (EV): -$${taxCreditEV.toLocaleString()}</li>
-            <li>Maintenance Costs (EV): $${maintenanceCostsEV.toLocaleString()}</li>
-            <li>Fuel Costs (EV): $${fuelCostsEV.toLocaleString()}</li>
+            <li>Maintenance Costs (EV): $${Math.round(maintenanceCostsEV).toLocaleString()}</li>
+            <li>Fuel Costs (EV): $${Math.round(fuelCostsEV).toLocaleString()}</li>
             <li>Depreciation (EV): $${Math.round(depreciationEV).toLocaleString()}</li>
             <li><strong>Total TCO for EV: $${Math.round(tcoEV).toLocaleString()}</strong></li>
         </ul>
@@ -63,8 +63,8 @@ function calculateTCO() {
         <ul>
             <li>MSRP (Gas): $${msrpGas.toLocaleString()}</li>
             <li>Tax Credit (Gas): -$${taxCreditGas.toLocaleString()}</li>
-            <li>Maintenance Costs (Gas): $${maintenanceCostsGas.toLocaleString()}</li>
-            <li>Fuel Costs (Gas): $${fuelCostsGas.toLocaleString()}</li>
+            <li>Maintenance Costs (Gas): $${Math.round(maintenanceCostsGas).toLocaleString()}</li>
+            <li>Fuel Costs (Gas): $${Math.round(fuelCostsGas).toLocaleString()}</li>
             <li>Depreciation (Gas): $${Math.round(depreciationGas).toLocaleString()}</li>
             <li><strong>Total TCO for Gas Vehicle: $${Math.round(tcoGas).toLocaleString()}</strong></li>
         </ul>
